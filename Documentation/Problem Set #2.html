@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://34.212.143.74/apps/s201913/tc2006/programming_problem_set_2/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Problem Set #2</title>
+    
+
+<meta name="author" content="Ariel Ortiz">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Problem Set #2_files/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="./Problem Set #2_files/w3pro.css">
+<link rel="stylesheet" href="./Problem Set #2_files/colores.css">
+<link rel="stylesheet" href="./Problem Set #2_files/estilos.css">
+<script src="./Problem Set #2_files/latest.js" async=""></script>
+
+  <script type="text/javascript" async="" src="./Problem Set #2_files/MathJax.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+  <body class="w3-large" data-gr-c-s-loaded="true"><div id="MathJax_Message" style="display: none;"></div>
+
+  <nav id="menu_lateral" class="w3-sidebar w3-bar-block w3-card-4 w3-top w3-large w3-animate-left" style="display:none; z-index:2; width:25%; min-width:300px">   
+      
+    <a href="http://34.212.143.74/apps/s201913/" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button w3-red">
+      ArielOrtiz.info &nbsp;<i class="fa fa-home"></i>  
+    </a>  
+    
+    <a href="http://34.212.143.74/apps/s201913/tc2006/noticias/" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button w3-red">
+      News
+    </a>
+    
+<a href="http://34.212.143.74/apps/s201913/tc2006/asesoria/" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button">
+  Office Hours
+</a>
+
+<a href="http://34.212.143.74/apps/s201913/tc2006/calificaciones/" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button">
+  Grades <span class="fecha"> <i class="fa fa-arrow-right"></i>
+  06/Dec</span>
+</a>
+
+<a href="http://34.212.143.74/apps/s201913/tc2006/calendario/" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button">
+  Quiz/Exam Calendar
+</a>
+
+<a href="http://34.212.143.74/apps/s201913/tc2006/reglas/" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button">
+  Game Rules
+</a>
+
+<a href="http://34.212.143.74/apps/s201913/tc2006/recursos/" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button">
+  Online Resources
+</a>
+
+<a href="http://34.212.143.74/apps/s201913/tc2006/bibliografia/" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button">
+  Bibliography
+</a>
+
+<a href="http://34.212.143.74/apps/s201913/tc2006/blogs/" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button">
+  Student Blogs
+</a>
+
+<a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC2006&amp;lang=EN" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button">
+  Syllabus <i class="fas fa-external-link-square-alt"></i>
+</a>
+
+<a href="https://github.com/ariel-ortiz/201913-tc2006.1" onclick="cerrar_menu_lateral()" class="w3-bar-item w3-button">
+  GitHub Repository <i class="fas fa-external-link-square-alt"></i>
+</a>
+    
+  </nav>
+  
+  <header>  
+    
+    <div class="w3-bar w3-theme-d3 w3-top">
+      <a class="w3-bar-item w3-button w3-large" onclick="abrir_menu_lateral()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a class="w3-bar-item w3-button w3-large" href="http://34.212.143.74/apps/s201913/tc2006/noticias/">
+        Programming Languages
+      </a>              
+    </div>
+    <div style="margin-top: 60px;"></div>
+  </header>        
+
+  <div style="max-width: 800px; margin: auto;" class="w3-panel w3-margin-top w3-padding-large">
+    
+
+    <img alt="" src="./Problem Set #2_files/computer_girl.png" width="128" height="128">
+
+    <h1>Problem Set #2</h1>
+
+    <div class="w3-panel w3-card-4 w3-theme-l5">
+        <h3>
+            Objective
+        </h3>
+
+        <p>
+            During this activity, students should be able to:
+        </p>
+
+        <ul>
+            <li>
+                Write functions of medium complexity using the Clojure programming language.
+            </li>
+        </ul>
+
+        <p>
+            This activity helps students develop the following skills, values and attitudes: ability to analyze and synthesize, capacity for identifying and solving problems, and efficient use of computer systems.
+        </p>
+    </div>
+
+    <br>
+
+    <h2>Activity Description</h2>
+
+    <p>
+        <strong>This activity can be developed individually or in pairs.</strong>
+    </p>
+
+    <p>
+      Solve the following programming problem set using Clojure. Place all your functions and unit tests in a file called <code>problemset2.clj</code>.
+    </p>
+
+    <ol>
+      <li>
+        <p>
+          The function <code>replic</code> takes two arguments: a list <code>lst</code> and an integer number <code>n</code>, where <code>n</code> ≥ 0. It returns a new list that replicates <code>n</code> times each element contained in <code>lst</code>. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-replic</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">replic</span> <span style="color: #0000DD; font-weight: bold">7</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">replic</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span>) (<span style="color: #0066BB; font-weight: bold">replic</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">4</span>)
+         (<span style="color: #0066BB; font-weight: bold">replic</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span>)))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>expand</code> takes a list <code>lst</code> as its argument. It returns a  list where the first element of <code>lst</code> appears one time, the second elements appears two times, the third element appears three times, and so on. Unit test:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-expand</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">expand</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span>) (<span style="color: #0066BB; font-weight: bold">expand</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">4</span>) (<span style="color: #0066BB; font-weight: bold">expand</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">c</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">d</span> <span style="color: #996633">d</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span>)
+         (<span style="color: #0066BB; font-weight: bold">expand</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span>)))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>insert</code> takes two arguments: a number <code>n</code> and a list of numbers <code>lst</code> in ascending order. It returns a new list with the same elements as <code>lst</code> but inserting <code>n</code> in its corresponding place. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-insert</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">14</span>) (<span style="color: #0066BB; font-weight: bold">insert</span> <span style="color: #0000DD; font-weight: bold">14</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span>) (<span style="color: #0066BB; font-weight: bold">insert</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">16</span>) (<span style="color: #0066BB; font-weight: bold">insert</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">16</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">10</span>) (<span style="color: #0066BB; font-weight: bold">insert</span> <span style="color: #0000DD; font-weight: bold">10</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span>)))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>my-sort</code> takes an unordered list of numbers as an argument, and returns a new list with the same elements but in ascending order. You must use the <code>insert</code> function defined in the previous exercise to write <code>my-sort</code>. You must NOT use the predefined <code>sort</code> function. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-my-sort</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">my-sort</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span>) (<span style="color: #0066BB; font-weight: bold">my-sort</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">7</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span>) (<span style="color: #0066BB; font-weight: bold">my-sort</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">5</span>) (<span style="color: #0066BB; font-weight: bold">my-sort</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">5</span>)))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>rotate-left</code> takes two arguments: an integer number <code>n</code> and a list <code>lst</code>. It returns the list that results from rotating <code>lst</code> a total of <code>n</code> elements to the left. If <code>n</code> is negative, it rotates to the right. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-rotate-left</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">5</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span> <span style="color: #996633">a</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">g</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">-1</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">-3</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">-7</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span> <span style="color: #996633">a</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">g</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">-8</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">45</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span>) (<span style="color: #0066BB; font-weight: bold">rotate-left</span> <span style="color: #0000DD; font-weight: bold">-45</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">f</span> <span style="color: #996633">g</span>)))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>binary</code> takes an integer <code>n</code> as input (assume that <code>n</code> ≥ 0). If <code>n</code> is equal to zero, it returns an empty list. If <code>n</code> is greater than zero, it returns a list with a sequence of ones and zeros equivalent to the binary representation of <code>n</code>. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-binary</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">binary</span> <span style="color: #0000DD; font-weight: bold">0</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">0</span>) (<span style="color: #0066BB; font-weight: bold">binary</span> <span style="color: #0000DD; font-weight: bold">30</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">1</span>) (<span style="color: #0066BB; font-weight: bold">binary</span> <span style="color: #0000DD; font-weight: bold">45123</span>))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>prime-factors</code> takes an integer <code>n</code> as input (assume that <code>n</code> &gt; 0), and returns a list containing the prime factors of <code>n</code> in ascending order. The prime factors are the prime numbers that divide a number exactly. If you multiply all the prime factors you get the original number. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-prime-factors</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">prime-factors</span> <span style="color: #0000DD; font-weight: bold">1</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span>) (<span style="color: #0066BB; font-weight: bold">prime-factors</span> <span style="color: #0000DD; font-weight: bold">6</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span>) (<span style="color: #0066BB; font-weight: bold">prime-factors</span> <span style="color: #0000DD; font-weight: bold">96</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">97</span>) (<span style="color: #0066BB; font-weight: bold">prime-factors</span> <span style="color: #0000DD; font-weight: bold">97</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">37</span>) (<span style="color: #0066BB; font-weight: bold">prime-factors</span> <span style="color: #0000DD; font-weight: bold">666</span>))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>gcd</code> takes two positive integer arguments <code>a</code> and <code>b</code> as arguments, where <code>a</code> &gt; 0 and <code>b</code> &gt; 0. It returns the <em>greatest common divisor</em> (GCD) of <code>a</code> and <code>b</code>. You must NOT use the predefined <code>gcd</code> function from the <code>clojure.math.numeric-tower</code> namespace.
+        </p>
+        <p>
+          <strong>NOTE: </strong> The GCD of two integers is the largest positive integer that divides both numbers exactly. For example, the GCD of 20 and 16 is 4.
+        </p>
+        <p>
+          Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-gcd</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #0000DD; font-weight: bold">1</span> (<span style="color: #0066BB; font-weight: bold">gcd</span> <span style="color: #0000DD; font-weight: bold">13</span> <span style="color: #0000DD; font-weight: bold">7919</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #0000DD; font-weight: bold">4</span> (<span style="color: #0066BB; font-weight: bold">gcd</span> <span style="color: #0000DD; font-weight: bold">20</span> <span style="color: #0000DD; font-weight: bold">16</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #0000DD; font-weight: bold">6</span> (<span style="color: #0066BB; font-weight: bold">gcd</span> <span style="color: #0000DD; font-weight: bold">54</span> <span style="color: #0000DD; font-weight: bold">24</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #0000DD; font-weight: bold">7</span> (<span style="color: #0066BB; font-weight: bold">gcd</span> <span style="color: #0000DD; font-weight: bold">6307</span> <span style="color: #0000DD; font-weight: bold">1995</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #0000DD; font-weight: bold">12</span> (<span style="color: #0066BB; font-weight: bold">gcd</span> <span style="color: #0000DD; font-weight: bold">48</span> <span style="color: #0000DD; font-weight: bold">180</span>)))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #0000DD; font-weight: bold">14</span> (<span style="color: #0066BB; font-weight: bold">gcd</span> <span style="color: #0000DD; font-weight: bold">42</span> <span style="color: #0000DD; font-weight: bold">56</span>))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>insert-everywhere</code> takes two arguments as input: an object <code>x</code> and a list <code>lst</code>. It returns a new list with all the possible ways in which <code>x</code> can be inserted into every position of <code>lst</code>. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-insert-everywhere</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>((<span style="color: #0000DD; font-weight: bold">1</span>)) (<span style="color: #0066BB; font-weight: bold">insert-everywhere</span> <span style="color: #0000DD; font-weight: bold">1</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>((<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">a</span>) (<span style="color: #996633">a</span> <span style="color: #0000DD; font-weight: bold">1</span>)) (<span style="color: #0066BB; font-weight: bold">insert-everywhere</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>((<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span>) (<span style="color: #996633">a</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span>) (<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">c</span>) (<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #0000DD; font-weight: bold">1</span>))
+         (<span style="color: #0066BB; font-weight: bold">insert-everywhere</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>((<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span>)
+           (<span style="color: #996633">a</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span>)
+           (<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span>)
+           (<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span>)
+           (<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">e</span>)
+           (<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #0000DD; font-weight: bold">1</span>))
+         (<span style="color: #0066BB; font-weight: bold">insert-everywhere</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>((<span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #996633">x</span> <span style="color: #0000DD; font-weight: bold">10</span>)
+           (<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span> <span style="color: #996633">x</span>))
+         (<span style="color: #0066BB; font-weight: bold">insert-everywhere</span> <span style="color: #AA6600">'x</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">7</span> <span style="color: #0000DD; font-weight: bold">8</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">10</span>)))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>deep-reverse</code> takes a list as its input. It returns a list with the same elements as its input but in reverse order. If there are any nested lists, these too should be reversed. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-deep-reverse</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">deep-reverse</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">3</span> (<span style="color: #996633">d</span> <span style="color: #996633">c</span> <span style="color: #996633">b</span>) <span style="color: #996633">a</span>) (<span style="color: #0066BB; font-weight: bold">deep-reverse</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> (<span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span>) <span style="color: #0000DD; font-weight: bold">3</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(((<span style="color: #0000DD; font-weight: bold">6</span> <span style="color: #0000DD; font-weight: bold">5</span>) <span style="color: #0000DD; font-weight: bold">4</span>) <span style="color: #0000DD; font-weight: bold">3</span> (<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">1</span>))
+         (<span style="color: #0066BB; font-weight: bold">deep-reverse</span> <span style="color: #333333">'</span>((<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #0000DD; font-weight: bold">3</span> (<span style="color: #0000DD; font-weight: bold">4</span> (<span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #0000DD; font-weight: bold">6</span>)))))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>pack</code> takes a list <code>lst</code> as its argument. If <code>lst</code> contains consecutive repeated elements they should be placed in separate sublists. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-pack</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">pack</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>((<span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span>) (<span style="color: #996633">b</span>) (<span style="color: #996633">c</span> <span style="color: #996633">c</span>) (<span style="color: #996633">a</span> <span style="color: #996633">a</span>) (<span style="color: #996633">d</span>) (<span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span>))
+         (<span style="color: #0066BB; font-weight: bold">pack</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">c</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>((<span style="color: #0000DD; font-weight: bold">1</span>) (<span style="color: #0000DD; font-weight: bold">2</span>) (<span style="color: #0000DD; font-weight: bold">3</span>) (<span style="color: #0000DD; font-weight: bold">4</span>) (<span style="color: #0000DD; font-weight: bold">5</span>)) (<span style="color: #0066BB; font-weight: bold">pack</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>((<span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span>)) (<span style="color: #0066BB; font-weight: bold">pack</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span>)))))
+</pre>
+        <p>
+          <strong>TIP:</strong> This problem can be easily solved using the <code>partition-by</code> predefined function.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          The function <code>compress</code> takes a list <code>lst</code> as its  argument. If <code>lst</code> contains consecutive repeated elements, they should be replaced with a single copy of the element. The order of the elements should not be changed. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-compress</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">compress</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span>) (<span style="color: #0066BB; font-weight: bold">compress</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">d</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">a</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span>)
+         (<span style="color: #0066BB; font-weight: bold">compress</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">c</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span>) (<span style="color: #0066BB; font-weight: bold">compress</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span>)))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>encode</code> takes a list <code>lst</code> as its argument. Consecutive duplicates of elements in <code>lst</code> are encoded as vectors [<code>n</code> <code>e</code>], where <code>n</code> is the number of duplicates of the element <code>e</code>. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-encode</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">encode</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>([<span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #996633">a</span>] [<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">b</span>] [<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #996633">c</span>] [<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #996633">a</span>] [<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #996633">d</span>] [<span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #996633">e</span>])
+         (<span style="color: #0066BB; font-weight: bold">encode</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">c</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>([<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">1</span>] [<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span>] [<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">3</span>] [<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">4</span>] [<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">5</span>])
+         (<span style="color: #0066BB; font-weight: bold">encode</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>([<span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span>]) (<span style="color: #0066BB; font-weight: bold">encode</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span>)))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>encode-modified</code> takes a list <code>lst</code> as its argument. It works the same as the previous problem, but if an element has no duplicates it is simply copied into the result list. Only elements with duplicates are converted to [<code>n</code> <code>e</code>] vectors. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-encode-modified</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">encode-modified</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>([<span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #996633">a</span>] <span style="color: #996633">b</span> [<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #996633">c</span>] [<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #996633">a</span>] <span style="color: #996633">d</span> [<span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #996633">e</span>])
+         (<span style="color: #0066BB; font-weight: bold">encode-modified</span> <span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">c</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span>) (<span style="color: #0066BB; font-weight: bold">encode-modified</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>([<span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span>]) (<span style="color: #0066BB; font-weight: bold">encode-modified</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span>)))))
+</pre>
+      </li>
+
+      <li>
+        <p>
+          The function <code>decode</code> takes as its argument an encoded list <code>lst</code> that has the same structure as the resulting list from the previous problem. It returns the decoded version of <code>lst</code>. Unit tests:
+        </p>
+<pre>(<span style="color: #0066BB; font-weight: bold">deftest</span> <span style="color: #996633">test-decode</span>
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span>() (<span style="color: #0066BB; font-weight: bold">decode</span> ())))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">b</span> <span style="color: #996633">c</span> <span style="color: #996633">c</span> <span style="color: #996633">a</span> <span style="color: #996633">a</span> <span style="color: #996633">d</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span> <span style="color: #996633">e</span>)
+         (<span style="color: #0066BB; font-weight: bold">decode</span> <span style="color: #333333">'</span>([<span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #996633">a</span>] <span style="color: #996633">b</span> [<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #996633">c</span>] [<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #996633">a</span>] <span style="color: #996633">d</span> [<span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #996633">e</span>]))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span>) (<span style="color: #0066BB; font-weight: bold">decode</span> <span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #0000DD; font-weight: bold">5</span>))))
+  (<span style="color: #0066BB; font-weight: bold">is</span> (<span style="color: #007020">= </span><span style="color: #333333">'</span>(<span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span>) (<span style="color: #0066BB; font-weight: bold">decode</span> <span style="color: #333333">'</span>([<span style="color: #0000DD; font-weight: bold">9</span> <span style="color: #0000DD; font-weight: bold">9</span>])))))
+</pre>
+      </li>
+    </ol>
+
+    <h2>Deliverables</h2>
+
+    <p>
+        The program source file must include at the top the authors’ personal information (name and student id) within comments. For example:
+    </p>
+
+<pre><span style="color: #888888">;----------------------------------------------------------</span>
+<span style="color: #888888">; Problem Set #1</span>
+<span style="color: #888888">; Date: September 20, 2019.</span>
+<span style="color: #888888">; Authors:</span>
+<span style="color: #888888">;          A01166611 Pepper Pots</span>
+<span style="color: #888888">;          A01160611 Anthony Stark</span>
+<span style="color: #888888">;----------------------------------------------------------</span>
+</pre>
+
+    <p>
+        Also, each function should include a <em>documentation string</em> (docstring) with a brief description of its behavior. For example:
+    </p>
+
+<pre>(<span style="color: #008800; font-weight: bold">defn </span><span style="color: #996633">max2</span>
+  <span style="color: #cc00ff">"Returns the largest of the two numbers x and y."</span>
+  [<span style="color: #996633">x</span> <span style="color: #996633">y</span>]
+  (<span style="color: #008800; font-weight: bold">if </span>(<span style="color: #007020">&gt; </span><span style="color: #996633">x</span> <span style="color: #996633">y</span>) <span style="color: #996633">x</span> <span style="color: #996633">y</span>))
+</pre>
+
+    <br>
+
+    
+
+    
+<div class="w3-card-4">
+  <h3 class="w3-theme w3-padding">
+    Upload Instructions
+  </h3>
+  <div class="w3-panel">
+    <p>
+      To deliver the <code>problemset2.clj</code> file, please provide the following information:
+    </p>
+
+    <form action="http://34.212.143.74/apps/abax/upload/363/" method="post" enctype="multipart/form-data">
+
+      <p>
+        <label class="indenta" for="matricula">
+          <strong class="w3-text-theme">Student ID</strong>:
+        </label>
+        <input class="w3-input w3-border" type="text" name="matricula" id="matricula" placeholder="A09999999" size="9" maxlength="9">
+      </p>
+
+      <p>
+        <label class="indenta" for="nip">
+          <strong class="w3-text-theme">PIN</strong>:
+        </label>
+        <input class="w3-input w3-border" type="password" name="nip" id="nip" placeholder="9999" size="4" maxlength="4">
+      </p>
+
+      <p>
+        <label class="indenta" for="archivo">
+          <strong class="w3-text-theme">File</strong>:
+        </label>
+
+        <input type="file" name="archivo" id="archivo">
+      </p>
+      <p>
+        <input class="w3-btn w3-theme" type="submit" name="submit" value="Send">
+      </p>
+    </form>
+
+    <p>
+      <a class="normal" href="http://34.212.143.74/apps/abax/solicitar_nip/en/">Request PIN</a>
+    </p>
+  </div>
+
+</div>
+
+
+    <p>
+        Only one team member needs to upload the file.
+    </p>
+
+    <p>
+        <strong>Due date is Friday, September 20.</strong>
+    </p>
+
+    <h2>
+        Evaluation
+    </h2>
+
+    <p>
+        This activity will be evaluated using the following criteria:
+    </p>
+
+    <table class="w3-table-all">
+
+        <tbody><tr>
+            <th>
+                -10
+            </th>
+            <td>
+                The program doesn't contain within comments the author's
+                personal information.
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                -30
+            </th>
+            <td>
+                A docstring is missing in one or more functions.
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                10
+            </th>
+            <td>
+                The program contains syntax errors.
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                1
+            </th>
+            <td>
+                The program was plagiarized in whole or in part.
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                10-100
+            </th>
+            <td>
+                Depending on the amount of exercises that were solved correctly.
+            </td>
+        </tr>
+    </tbody></table>
+
+
+ 
+  </div>
+  
+  
+<hr>
+<footer class="w3-container w3-padding w3-center w3-small">
+  <i class="far fa-copyright"></i>
+ 1996-2019 by Ariel Ortiz (<a class="normal" href="mailto:ariel.ortiz@tec.mx">ariel.ortiz@tec.mx</a>)
+  <br>
+  Made with <a class="normal" href="http://www.djangoproject.com/">Django</a> and <a class="normal" href="https://www.w3schools.com/w3css/">W3.CSS</a>
+  | Licensed under <a class="normal" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons</a>
+  | Valid <a class="normal" href="http://validator.w3.org/check?uri=referer">HTML5</a> 
+  | Icons by <a class="normal" href="https://fontawesome.com/">Font Awesome</a> &amp; <a class="normal" href="https://www.flaticon.com/">Flaticon</a>
+  <br>
+  <br>
+</footer>
+  
+  <script>
+    
+function accionNoticias(idBoton, idElemento) {
+  var boton = document.getElementById(idBoton);
+  var elemento = document.getElementById(idElemento);
+    
+  if (elemento.className.indexOf('w3-show') == -1) {
+    elemento.className += ' w3-show';
+    boton.innerHTML = '&#9661; &nbsp;Previous News';
+  } else { 
+    elemento.className = elemento.className.replace(' w3-show', '');
+    boton.innerHTML = '&#9655; &nbsp;Previous News';
+  }
+}
+
+var menu_lateral = document.getElementById('menu_lateral');
+var recien_abierto = false;
+var menu_abierto = false;
+
+function abrir_menu_lateral() {
+  menu_lateral.style.display = 'block';
+  recien_abierto = true;
+  menu_abierto = true;
+}
+ 
+function cerrar_menu_lateral() {
+  menu_lateral.style.display = 'none';
+  menu_abierto = false;
+}
+
+window.onclick = function(event) {
+  if (recien_abierto) {
+    recien_abierto = false;
+  } else if (menu_abierto && event.target !== menu_lateral) {
+    cerrar_menu_lateral();
+  }
+}
+
+  </script>
+  
+  
+
+  </body></html>
